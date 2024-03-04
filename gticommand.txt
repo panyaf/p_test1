@@ -1,0 +1,27 @@
+git add 文件名
+git add .
+git commit -m "注释"
+git push
+
+提交部分文件
+git add <file1> <file2> ...
+git commit -m "提交部分文件"
+
+git push -u origin master
+
+    git push: 表示将本地的提交推送到远程仓库。
+    -u: 是 --set-upstream 的缩写，它会将本地的 master 分支与远程的 master 分支进行关联，下次推送时只需使用 git push 即可。
+    origin: 指定了远程仓库的别名，通常用 origin 来表示默认远程仓库。
+    master: 表示要推送的本地分支是 master 分支。
+
+要将本地分支推送到远程仓库的指定分支，您可以使用以下格式的命令：
+
+bash
+
+git push <remote_name> <local_branch_name>:<remote_branch_name>
+
+具体解释如下：
+
+    <remote_name>：远程仓库的别名，通常是 origin。
+    <local_branch_name>：要推送的本地分支名称。
+    <remote_branch_name>：要在远程仓库上创建或更新的分支名称。
